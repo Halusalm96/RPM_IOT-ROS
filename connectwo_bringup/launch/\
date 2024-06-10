@@ -1,0 +1,6 @@
+<launch>
+  <!-- Include other launch files -->
+  <include file="$(find your_package_name)/launch/connectwo_keyboard.launch" />
+  <include file="$(find your_package_name)/launch/connectwo_rplidar.launch" />
+</launch>
+

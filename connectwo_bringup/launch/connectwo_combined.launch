@@ -1,0 +1,7 @@
+<launch>
+  <!-- Include other launch files -->
+  <include file="$(find connectwo_bringup)/launch/connectwo_keyboard.launch" />
+  <include file="$(find connectwo_bringup)/launch/connectwo_rplidar.launch" />
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch" />
+</launch>
+
