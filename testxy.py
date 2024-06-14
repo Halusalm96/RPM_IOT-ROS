@@ -17,10 +17,10 @@ def update_robot_position(x, y, yaw):
     existing_row = cursor.fetchone()
 
     if existing_row is None:
-        insert_sql = "INSERT INTO robot (robot_name, robot_x, robor_y, robot_r, robot_status) VALUES (%s, %s, %s, %s, %s)"
+        insert_sql = "INSERT INTO robot (robot_name, robot_x, robot_y, robot_yaw, robot_status) VALUES (%s, %s, %s, %s, %s)"
         cursor.execute(insert_sql, ('RPM-01', x, y, yaw, 'online'))
     else:
-        update_sql = "UPDATE robot SET robot_x = %s, robot_x = %s, robot_r = %s, robot_status = %s WHERE robot_name = %s"
+        update_sql = "UPDATE robot SET robot_x = %s, robot_y = %s, robot_yaw = %s, robot_status = %s WHERE robot_name = %s"
         cursor.execute(update_sql, (x, y, yaw, 'online', 'RPM-01'))
 
     db.commit()
@@ -35,6 +35,7 @@ def update_robot_offline():
     cursor.close()
 
 def tf_callback(tf_msg):
+    global db
     trans = tf_msg.transform.translation
     rot = tf_msg.transform.rotation
 
@@ -76,7 +77,7 @@ def main():
     db.close()
 
 if __name__ == '__main__':
-    signal.signal(signal.SIGINT, signal_handler)  # Ctrl+C 종료 시 시그널
+    signal.signal(signal.SIGINT, signal_handler)  # Ctrl+C 종료 시 시그널 핸들러 등록
     try:
         main()
     except rospy.ROSInterruptException:
