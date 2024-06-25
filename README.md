@@ -24,4 +24,4 @@ CMAKE를 하기 위해 CMakeLists.txt의 INCLUDE_DIRS include를 주석 처리 �
 2024/6/25 15:10 yolo_processor에서 영역, 객체명 보이게 수정
 yolo_processor3를 통해 웹서버에서 인식 할 수 있는 압축 이미지로 변환 + 정확도 70% 이상일 때 바운딩 박스 생성
 
-2024/6/25 15:30 hello_world2.cpp를 생성하여 이미지를 resize+흑백을 적용하여 YOLO의 속도를 향상하려고 함
+2024/6/25 15:30 hello_world2.cpp를 생성하여 이미지를 resize+흑백을 적용하여 YOLO의 속도를 향상하려고 함 + hello_world2.launch 수정

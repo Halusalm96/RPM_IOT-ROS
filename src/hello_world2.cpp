@@ -9,17 +9,17 @@
 namespace nodelet_hello_world
 {
 
-class Hello : public nodelet::Nodelet
+class Hello2 : public nodelet::Nodelet
 {
 private:
     virtual void onInit()
     {
         ros::NodeHandle& private_nh = getPrivateNodeHandle();
-        NODELET_DEBUG("Initialized the Nodelet");
+        NODELET_DEBUG("Initialized the Hello2 Nodelet");
 
         // Initialize publisher and subscriber
         pub = private_nh.advertise<sensor_msgs::Image>("image_out", 5);
-        sub = private_nh.subscribe("image_in", 5, &Hello::callback, this);
+        sub = private_nh.subscribe("image_in", 5, &Hello2::callback, this);
     }
 
     void callback(const sensor_msgs::ImageConstPtr& input)
@@ -58,4 +58,4 @@ private:
 
 }
 
-PLUGINLIB_EXPORT_CLASS(nodelet_hello_world::Hello, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(nodelet_hello_world::Hello2, nodelet::Nodelet);
