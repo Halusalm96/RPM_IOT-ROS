@@ -17,3 +17,6 @@ CMAKE를 하기 위해 CMakeLists.txt의 INCLUDE_DIRS include를 주석 처리 �
 
 주의 사항 : ros_master_uri, ros_ip 설정 필요(~/.bashrc), 사양 문제로 gpu가 아닌 cpu로 인식
 입력 토픽 : /usb_cam/image_raw, 출력 토픽 : /yolo_output
+
+2024/6/25 12:30 yolo_processor2.py를 통해 노드로 영상이 아닌 객체와 정확도만 송출, yolo_processor.launch 파일 수정(type만 변경하면 변환 가능)
+입력 토픽 : /usb_cam/image_raw, 출력 토픽 : /yolo_results
