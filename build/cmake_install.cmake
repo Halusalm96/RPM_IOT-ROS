@@ -144,14 +144,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/nodelet_hello_world" TYPE DIRECTORY FILES "/home/user1/catkin_ws/src/nodelet_hello_world/include/nodelet_hello_world/")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nodelet_hello_world" TYPE FILE FILES
-    "/home/user1/catkin_ws/src/nodelet_hello_world/hello_world.xml"
-    "/home/user1/catkin_ws/src/nodelet_hello_world/hello_world.launch"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nodelet_hello_world" TYPE PROGRAM FILES "/home/user1/catkin_ws/src/nodelet_hello_world/src/yolo_processor.py")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

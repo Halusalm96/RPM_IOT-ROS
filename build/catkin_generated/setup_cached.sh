@@ -12,5 +12,6 @@ export LD_LIBRARY_PATH='/home/user1/catkin_ws/src/nodelet_hello_world/build/deve
 export PATH='/opt/ros/melodic/bin:/home/user1/.local/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-12/bin:/usr/local/cuda/bin:/home/user1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PKG_CONFIG_PATH="/home/user1/catkin_ws/src/nodelet_hello_world/build/devel/lib/pkgconfig:/home/user1/catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/user1/catkin_ws/src/nodelet_hello_world/build'
+export PYTHONPATH='/opt/ros/melodic/lib/python2.7/dist-packages:/home/user1/catkin_ws/devel/lib/python3/dist-packages'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/user1/catkin_ws/src/nodelet_hello_world/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/user1/catkin_ws/src/nodelet_hello_world:$ROS_PACKAGE_PATH"

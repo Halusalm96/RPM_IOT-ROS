@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/user1/catkin_ws/src/nodelet_hello_world/build",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"nodelet_hello_world\\\" -Dnodelet_hello_world_EXPORTS -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o CMakeFiles/nodelet_hello_world.dir/src/hello_world.cpp.o -c /home/user1/catkin_ws/src/nodelet_hello_world/src/hello_world.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"nodelet_hello_world\\\" -Dnodelet_hello_world_EXPORTS -I/home/user1/catkin_ws/src/nodelet_hello_world/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv  -g -fPIC   -o CMakeFiles/nodelet_hello_world.dir/src/hello_world.cpp.o -c /home/user1/catkin_ws/src/nodelet_hello_world/src/hello_world.cpp",
   "file": "/home/user1/catkin_ws/src/nodelet_hello_world/src/hello_world.cpp"
 },
 {

@@ -103,12 +103,16 @@ devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libboost_program_
 devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libroscpp.so
 devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libcv_bridge.so
+devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/librosconsole.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
 devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 devel/lib/libnodelet_hello_world.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libxmlrpcpp.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libroscpp_serialization.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/librostime.so
 devel/lib/libnodelet_hello_world.so: /opt/ros/melodic/lib/libcpp_common.so
