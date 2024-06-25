@@ -779,6 +779,33 @@ src/hello_world.cpp.s:
 	$(MAKE) -f CMakeFiles/nodelet_hello_world.dir/build.make CMakeFiles/nodelet_hello_world.dir/src/hello_world.cpp.s
 .PHONY : src/hello_world.cpp.s
 
+src/hello_world2.o: src/hello_world2.cpp.o
+
+.PHONY : src/hello_world2.o
+
+# target to build an object file
+src/hello_world2.cpp.o:
+	$(MAKE) -f CMakeFiles/nodelet_hello_world.dir/build.make CMakeFiles/nodelet_hello_world.dir/src/hello_world2.cpp.o
+.PHONY : src/hello_world2.cpp.o
+
+src/hello_world2.i: src/hello_world2.cpp.i
+
+.PHONY : src/hello_world2.i
+
+# target to preprocess a source file
+src/hello_world2.cpp.i:
+	$(MAKE) -f CMakeFiles/nodelet_hello_world.dir/build.make CMakeFiles/nodelet_hello_world.dir/src/hello_world2.cpp.i
+.PHONY : src/hello_world2.cpp.i
+
+src/hello_world2.s: src/hello_world2.cpp.s
+
+.PHONY : src/hello_world2.s
+
+# target to generate assembly for a file
+src/hello_world2.cpp.s:
+	$(MAKE) -f CMakeFiles/nodelet_hello_world.dir/build.make CMakeFiles/nodelet_hello_world.dir/src/hello_world2.cpp.s
+.PHONY : src/hello_world2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -840,6 +867,9 @@ help:
 	@echo "... src/hello_world.o"
 	@echo "... src/hello_world.i"
 	@echo "... src/hello_world.s"
+	@echo "... src/hello_world2.o"
+	@echo "... src/hello_world2.i"
+	@echo "... src/hello_world2.s"
 .PHONY : help
 
 

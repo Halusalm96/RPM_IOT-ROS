@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/user1/catkin_ws/src/nodelet_hello_world/src/hello_world.cpp" "/home/user1/catkin_ws/src/nodelet_hello_world/build/CMakeFiles/nodelet_hello_world.dir/src/hello_world.cpp.o"
+  "/home/user1/catkin_ws/src/nodelet_hello_world/src/hello_world2.cpp" "/home/user1/catkin_ws/src/nodelet_hello_world/build/CMakeFiles/nodelet_hello_world.dir/src/hello_world2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

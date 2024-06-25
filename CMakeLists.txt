@@ -23,6 +23,7 @@ include_directories(
 
 add_library(nodelet_hello_world
   src/hello_world.cpp
+  src/hello_world2.cpp
 )
 
 target_link_libraries(nodelet_hello_world
@@ -31,6 +32,8 @@ target_link_libraries(nodelet_hello_world
 
 install(PROGRAMS
   src/yolo_processor.py
+  src/yolo_processor2.py
+  src/yolo_processor3.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
