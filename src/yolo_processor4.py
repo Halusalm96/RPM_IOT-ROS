@@ -42,10 +42,11 @@ class YOLOProcessor:
                         cv2.putText(cv_image_bgr, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
             # 이미지를 압축하여 ROS 메시지로 변환
+            compression_params = [cv2.IMWRITE_JPEG_QUALITY, 90]  # 압축 품질 설정 (0-100, 높을수록 품질이 높음)
             compressed_msg = CompressedImage()
             compressed_msg.header.stamp = rospy.Time.now()
             compressed_msg.format = "jpeg"
-            compressed_msg.data = cv2.imencode('.jpg', cv_image_bgr)[1].tobytes()
+            compressed_msg.data = cv2.imencode('.jpg', cv_image_bgr, compression_params)[1].tobytes()
 
             # 압축된 이미지 메시지를 발행
             self.image_pub.publish(compressed_msg)

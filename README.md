@@ -27,3 +27,8 @@ yolo_processor3를 통해 웹서버에서 인식 할 수 있는 압축 이미지
 2024/6/25 15:30 hello_world2.cpp를 생성하여 이미지를 resize+흑백을 적용하여 YOLO의 속도를 향상하려고 함 + hello_world2.launch 수정
 
 2024/6/25 17:00 yolo_processor4를 생성하여 hello_world2.cpp의 이미지 처리 -> 속도의 큰 차이가 없어서 원본 이미지 사용이 나아보임
+
+2024/6/26 10:20 yolo_processor4에 이미지 압축 품질 설정 코드 삽입 - 추가 압축 가능
+hello_world2도 이미지 압출 품질 설정 코드 삽임
+
+pi_yolo_test를 통해 pi에서 yolo 시도 -> pi 사양을 파악해 보니 불가할 것으로 판단됨
